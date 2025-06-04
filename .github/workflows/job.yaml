@@ -5,6 +5,8 @@ on: push
 jobs:
   echo-job:
     runs-on: unbuntu-latest
+
+    
     steps: 
-      -name: imprimi hola mundo
-      run: echo "Hola mundo de workflows"
+      - name: imprimi hola mundo
+        run: echo "Hola mundo de workflows"
