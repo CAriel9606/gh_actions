@@ -4,9 +4,16 @@ on: push
 
 jobs:
   echo-job:
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
 
-    
     steps: 
       - name: imprimi hola mundo
         run: echo "Hola mundo de workflows"
+
+  second-job:
+    needs: echo-job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: echo de variable
+        run: echo $GITHUB_OUTPUT
