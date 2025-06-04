@@ -1,0 +1,10 @@
+name: Mi primer worflow
+
+on: push
+
+jobss:
+  echo-job:
+    runs-on: unbuntu-latest
+    steps: 
+      -name: imprimi hola mundo
+        run: echo "Hola mundo de workflows"
