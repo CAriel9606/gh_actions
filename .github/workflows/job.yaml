@@ -2,9 +2,9 @@ name: Mi primer worflow
 
 on: push
 
-jobss:
+jobs:
   echo-job:
     runs-on: unbuntu-latest
     steps: 
       -name: imprimi hola mundo
-        run: echo "Hola mundo de workflows"
+      run: echo "Hola mundo de workflows"
